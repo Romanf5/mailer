@@ -1,0 +1,83 @@
+.message {
+  &__wrp {
+    padding: 12px 23px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    display: flex;
+    cursor: pointer;
+
+    .group-button {
+      opacity: 0;
+      visibility: hidden;
+      transition: 500ms
+    }
+    
+    &:hover {
+      .group-button {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &_unred {
+    font-weight: 700;
+  }
+}
+
+.short-subject {
+  max-width: 255px;
+  width: 100%;
+}
+
+.short-text {
+  max-width: 745px;
+}
+
+.full-message {
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  transform: scale(1.03);
+  background-color: #fff;
+
+  &__title {
+    font-weight: 700;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    font-size 13px;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+
+    span {
+      display: inline-block;
+
+      &:first-of-type {
+        min-width: 40px;
+      }
+    }
+  }
+
+  &__contact-item {
+    padding: 12px 20px;
+  }
+
+  &__text {
+    padding: 15px 20px;
+  }
+}
+
+.wrap-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.group-button {
+  flex-shrink 0
+}
